@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Comic Store</title>
+  </head>
+  <body>
+    <h1>Comic Book Inventory</h1>
+    <a href="/add">Add New Comic</a>
+    <ul>
+      <% comics.forEach(comic => { %>
+      <li>
+        <a href="/api/comics/<%= comic._id %>"><%= comic.title %></a>
+        <form
+          action="/api/comics/<%= comic._id %>"
+          method="POST"
+          style="display: inline"
+        >
+          <button
+            type="submit"
+            formaction="/api/comics/<%= comic._id %>?_method=DELETE"
+          >
+            Delete
+          </button>
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

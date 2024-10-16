@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Add Comic</title>
+  </head>
+  <body>
+    <h1>Add New Comic</h1>
+    <form action="/api/comics" method="POST">
+      <label for="title">Book Name:</label>
+      <input type="text" id="title" name="title" required />
+      <label for="writer">Author Name:</label>
+      <input type="text" id="writer" name="writer" required />
+      <label for="publicationYear">Year of Publication:</label>
+      <input
+        type="number"
+        id="publicationYear"
+        name="publicationYear"
+        required
+      />
+      <label for="retailPrice">Price:</label>
+      <input type="number" id="retailPrice" name="retailPrice" required />
+      <label for="salePrice">Discount:</label>
+      <input type="number" id="salePrice" name="salePrice" />
+      <label for="totalPages">Number of Pages:</label>
+      <input type="number" id="totalPages" name="totalPages" required />
+      <label for="state">Condition:</label>
+      <select id="state" name="state" required>
+        <option value="new">New</option>
+        <option value="used">Used</option>
+      </select>
+      <button type="submit">Add Comic</button>
+    </form>
+    <a href="/">Back to Inventory</a>
+  </body>
+</html>
