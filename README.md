@@ -1,4 +1,4 @@
-Comic Book Inventory Management System
+#Comic Book Inventory Management System
 
 Overview
 
@@ -28,3 +28,11 @@ Templating Engine: EJS
 Middleware: Body-parser, CORS, Method-override
 
 Styling: CSS for basic styling
+
+Usage
+
+Navigate to the homepage to view the comic book inventory.
+
+Click "Add New Comic" to enter new comic details.
+
+Use the provided buttons to edit or delete comic entries.
