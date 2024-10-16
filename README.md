@@ -1,11 +1,11 @@
-#Comic Book Inventory Management System
+# Comic Book Inventory Management System
 
-Overview
+# Overview
 
 The Comic Book Inventory Management System is a web application designed to manage and display comic books for sale. 
 Built using Node.js with Express.js, this system allows store managers to perform CRUD (Create, Read, Update, Delete) operations on comic book entries, making it easy to maintain an up-to-date inventory.
 
-Features
+# Features
 
 Add New Comics: Store managers can add new comic books to the inventory by providing necessary details.
 
@@ -17,7 +17,7 @@ Delete Comics: Users can remove comic books from the inventory with a simple but
 
 Error Handling: The application includes robust error handling to manage input validation and provide meaningful feedback.
 
-Technologies Used
+# Technologies Used
 
 Backend: Node.js, Express.js
 
@@ -29,7 +29,7 @@ Middleware: Body-parser, CORS, Method-override
 
 Styling: CSS for basic styling
 
-Usage
+# Usage
 
 Navigate to the homepage to view the comic book inventory.
 
